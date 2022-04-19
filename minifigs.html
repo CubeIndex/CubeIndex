@@ -1,20 +1,73 @@
 <!DOCTYPE html>
-<html>
+<html lang="nl">
 <head>
-<link rel="stylesheet" href="/css/style.css">
-<title>CubeIndex_Minifigs</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="assets/favicon" href="assets/favicon.ico">
+    <script src="/js/script.js"></script>
+    <title>CubeIndex | Minifigs</title>
 </head>
 <body>
+    <main class="grid">
+        <div class="logo"> <!-- LOGO -->
+            <a href="/index.html"><img src="assets/logo-white-transparent.png" alt="CubeIndex Logo" title="CubeIndex Logo"></a>
+        </div>
 
-    <div class="nav">
-        <nav><a href="/index.html"> <img src="/assets/lego-logo-final-black.png" width="50" alt="Logo"></a>
-        <a href="/index.html"><button id="home">Home</button></a>
-        <a href="/Geordend.html"><button id="Georderd">Georderd</button></a>
-        <a href="/Blacklist.html"><button id="Blacklist">Blacklist</button></a>
-        <input type="text" placeholder="Search.."></nav>
-    </div>
+        
+        <!-- WIP -->
 
-<h1>This is a Minifigs Page</h1>
 
+        <div class="navbar"> <!-- NAV -->
+            <nav>
+            </nav>
+        </div>
+
+        
+
+        <nav id="main-menu">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Geordend</a></li>
+              <li><a href="#">Blacklist</a></li>
+            </ul>
+          </nav>
+          
+          <input type="checkbox" id="hamburger-input" class="burger-shower" />
+          <label id="hamburger-menu" for="hamburger-input">
+            <nav id="sidebar-menu">
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="geordend.html">Geordend</a></li>
+                <li><a href="blacklist.html">Blacklist</a></li>
+              </ul>
+            </nav>
+          </label>
+          
+          <div class="overlay"></div>
+            
+        </div>
+
+
+        <div class="minifig">
+            <img src="https://fakeimg.pl/450x300/?text=minifig">
+            <br>
+            <img id="part" src="https://fakeimg.pl/100x100/?text=Part">
+            <img id="part" src="https://fakeimg.pl/100x100/?text=Part">
+            <img id="part" src="https://fakeimg.pl/100x100/?text=Part">
+            <img id="part" src="https://fakeimg.pl/100x100/?text=Part">
+            <img id="part" src="https://fakeimg.pl/100x100/?text=Part">
+            <img id="part" src="https://fakeimg.pl/100x100/?text=Part">
+            <img id="part" src="https://fakeimg.pl/100x100/?text=Part">
+        </div>
+
+
+        <!-- WIP -->
+
+
+        <div class="footer">  <!-- FOOTER -->
+            <footer>CubeIndex</footer>
+        </div>
+        
+    </main>
 </body>
-</html>
