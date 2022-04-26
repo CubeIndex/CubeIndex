@@ -1,22 +1,51 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <link rel="icon" type="image/x-icon" href="assets/lego-logo-final-black.png">
-        <link rel="stylesheet" href="/css/style.css">
-        <script src="/js/Javascript.Js"></script>
-        <title>Landing Page</title>
-        </head>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="assets/favicon" href="assets/favicon.ico">
+    <script src="/js/script.js"></script>
+    <title>Landing</title>
+</head>
 <body>
     <div class="landing">
-    <a href="index.html"><img src="assets/logo-black-transparent.png"></a>
-    <a href=""><img src="https://fakeimg.pl/100x100/?text=Project"></a>
-    <a href=""><img src="https://fakeimg.pl/100x100/?text=Project"></a>
 
-    <a href="index.html"><h2>CubeIndex</h2></a>
-    <a href=""><h2>Project naam</h2></a>
-    <a href=""><h2>Project naam</h2></a>
+        <div class="project">
+    <a href="index.html"><img src="assets/logo-black-transparent.png"></a> <br>
+    <a href="index.html"><h2>CubeIndex</h2></a></div>
 
+    <div class="project">
+        <a onclick ="togglePopup()"><img src="assets/landing-fifa.png"></a><br>
+    <a onclick ="togglePopup()"><h2>Fifa</h2></a></div>
 
+    <div class="project">
+        <a onclick ="togglePopup()"><img src="assets/landing-fortnite.png"></a><br>
+    <a onclick ="togglePopup()"><h2>Fortnite</h2></a></div>
+
+    <div class="project">
+        <a onclick ="togglePopup()"><img src="assets/landing-lotr.png"></a><br>
+    <a onclick ="togglePopup()"><h2>Lord of the rings(The One)</h2></a></div>
+
+    <div class="project">
+        <a onclick ="togglePopup()"><img src="assets/landing-magic.png"></a><br>
+    <a onclick ="togglePopup()"><h2>Magic The Gathering</h2></a></div>
+
+    <div class="project">
+        <a onclick ="togglePopup()"><img src="assets/landing-nbb.png"></a><br>
+    <a onclick ="togglePopup()"><h2>Nationale Bank(NBB)</h2></a></div>
+
+    <div class="popup" id="popup-1">
+        <div class="overlay" >
+
+        </div>
+        <div class="content" >
+            <div class="close-btn" onclick="togglePopup()">&times;</div>
+        <h3>
+            U hebt geen toegang tot deze pagina. 
+        </h3>
+        </div>
+    </div>
 </body>
 </html>
 
