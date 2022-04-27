@@ -1,0 +1,22 @@
+{
+  "name": "cubeindex",
+  "version": "1.0.0",
+  "description": "This is a README.md",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CubeIndex/CubeIndex.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CubeIndex/CubeIndex/issues"
+  },
+  "homepage": "https://github.com/CubeIndex/CubeIndex#readme",
+  "devDependencies": {
+    "@types/node": "^17.0.29"
+  }
+}
