@@ -18,5 +18,8 @@
   "homepage": "https://github.com/CubeIndex/CubeIndex#readme",
   "devDependencies": {
     "@types/node": "^17.0.29"
+  },
+  "dependencies": {
+    "readline-sync": "^1.4.10"
   }
 }

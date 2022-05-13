@@ -1,6 +1,9 @@
 function togglePopup() {
     document.getElementById("popup-1").classList.toggle("active");
 }
+function padDigits(number, digits) {
+    return Array(Math.max(digits - String(number).length + 1, 0)).join(0) + number;
+}
 
 function fetchDataSingle() {
 
@@ -61,7 +64,7 @@ function fetchData() {
         });
 }
 
-function fetchDataIndex() {
+function fetchDataIndex1() {
     fetch("https://rebrickable.com/api/v3/lego/minifigs/?key=2aca99226ffb9e3ad4b7e531f1b97764")
     .then(response => {
         if (!response.ok) {
@@ -72,7 +75,7 @@ function fetchDataIndex() {
     .then(data => {
         console.log(data.results);
         //data = object with all data, results = name of the array, slice = to pick a specific amount of objects in the array, map = to convert to HTML 
-        const html = data.results.slice(0, 5).map
+        const html = data.results.slice(0, 1).map
             (user => {
                 return `
         <div class="user" >
