@@ -1,5 +1,5 @@
-function togglePopup() {
-    document.getElementById("popup-1").classList.toggle("active");
+function togglePopup(popup_id) {
+    document.getElementById(`popup-${popup_id}`).classList.toggle("active");
 }
 function padDigits(number, digits) {
     return Array(Math.max(digits - String(number).length + 1, 0)).join(0) + number;

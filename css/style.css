@@ -113,11 +113,15 @@ body {
 	text-align: center;
 	margin: 80px;
 }
-#indexMinifig {
+.indexMinifig {
 	border: solid var(--lego-black) 5px;
+	width: 300px;
 }
-#indexSets > img {
+.indexSets > img {
 	border: solid var(--lego-black) 5px;
+	height: 200px;
+	margin: 1%;
+
 }
 .ordenen .popup .overlay {
 	position: fixed;

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="nl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,70 +10,41 @@
     <script src="/js/index.js"></script>
     <title>CubeIndex | Home</title>
 </head>
+
 <body>
     <main class="grid">
 
-		<!-- LOGO -->
+        <!-- LOGO -->
         <div class="logo">
-            <a href="/index.html"><img src="assets/logo-white-transparent.png" alt="CubeIndex Logo" title="CubeIndex Logo"></a>
+            <a href="/index.html"><img src="assets/logo-white-transparent.png" alt="CubeIndex Logo"
+                    title="CubeIndex Logo"></a>
         </div>
 
         <!-- NAVBAR -->
         <div class="navbar">
-			<nav>
+            <nav>
                 <a href="index.html">Home</a></li>
                 <a href="geordend.html">Geordend</a></li>
                 <a href="blacklist.html">Blacklist</a></li>
             </nav>
-		</div>
-        
-        <!-- CONTENT -->
-        <div class="ordenen">
-            <div class="popup" id="popup-1">
-                <div class="overlay" >
-
-                </div>
-                    <div class="content">
-                        <div class="close-btn" onclick="togglePopup()">&times; 
-                    </div>
-                    <h3>
-                        Geef uw reden voor blacklisting. 
-                    </h3>
-                    <textarea rows="5" cols="50" name="comment" form="usrform" placeholder="Uw reden hier...">
-                        
-                    </textarea> 
-                    <br>
-                    <button onclick="togglePopup()">
-                        Submit
-                    </button>
-                    <button onclick="togglePopup()">
-                        Cancel
-                    </button>
-                </div>
-            </div>
-            <img id="indexMinifig" src="https://fakeimg.pl/445x200/?text=minifig">
-            <br>
-            <div id="indexSets">
-                <img src="https://fakeimg.pl/100x100/?text=set">
-                <img src="https://fakeimg.pl/100x100/?text=set">
-                <img src="https://fakeimg.pl/100x100/?text=set">
-                <img src="https://fakeimg.pl/100x100/?text=set">
-            </div>
-            <br>
-            <button type="button" onclick ="togglePopup()">
-                Blacklist
-            </button> 
-            <button type="button">
-                Skip
-            </button>
         </div>
+
+        <!-- CONTENT -->
+        <div class="nummerbar">
+            <h1>Aantal minifigs</h1>
+            <input type="number" id="userNumberVal" max="10">
+            <button id="userNumberBtn" type="button">Go!</button>
+        </div>
+        
+
+        <div id="ordencont"></div>
 
         <div id="app"></div>
         <br>
         <div id="appindex"></div>
 
 
-		<!-- FOOTER -->
+        <!-- FOOTER -->
         <div class="footer">
             <footer><a href="/landing.html">Landing Page</a></footer>
         </div>
