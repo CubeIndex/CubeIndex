@@ -108,6 +108,20 @@ body {
 
 
 /* ============ INDEX ============ */
+
+.nummerbar{
+	background-color: rgba(0, 128, 0, 0.288);
+}
+
+ #ordencont{
+
+	 background-color: rgba(255, 0, 0, 0.116);
+}
+
+ .indexSets{
+	background-color: rgba(32, 16, 248, 0.178);
+}
+
 .ordenen {
 	grid-area: main;
 	text-align: center;
@@ -134,7 +148,7 @@ body {
 	display: none;
 }
 .ordenen .popup .content {
-	position: absolute;
+	position: fixed;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%) scale(0);
