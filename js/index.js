@@ -41,8 +41,6 @@ function whitelist(fig_num,fig_set){
     // when clicked on set image
     console.log(`whitelisted minifig: ${fig_num} with set ${fig_set}`)
     // get fig num and set num
-    
-    
     skipSet(fig_num);
 }
 

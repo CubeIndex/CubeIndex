@@ -20,6 +20,7 @@
     "@types/node": "^17.0.29"
   },
   "dependencies": {
+    "mongodb": "^4.6.0",
     "readline-sync": "^1.4.10"
   }
 }
