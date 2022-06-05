@@ -1,3 +1,1 @@
-const { Server } = require("http")
-
-web: node: Server.js
+node : server.js
