@@ -44,7 +44,6 @@ function whitelist(fig_num,fig_set){
     // haal single item op met function
 
     // pak data en steek in databank
-        maindb(setnum,fignum,figimg,setimg)
     //verwijder set uit lijst op pagina
     skipSet(fig_num);
 }
@@ -69,7 +68,7 @@ async function kaders() {
 
     // pagina leegmaken
     ordenencontainer.innerHTML = "";
-    while (setCounter < userInputNumber) {
+    while (setCounter < 4) {
 
         // haal data op en controlleer voor set aantal
         let succes = await fetchDataIndex(setNumber);
@@ -131,7 +130,7 @@ async function fetchDataIndex(fig_num) {
             succes = false;
             return;
         }
-        // do shit
+        // do stuff
         sets=data.results
     });
     
@@ -283,3 +282,4 @@ function fetchData1() {
 }*//*
 fetchDataSingle1();
 fetchData1();*/
+
