@@ -3,7 +3,7 @@
   	font-family: sans-serif;
 }
 *::selection {
-  	background-color: #ca1a28;
+  	background-color: var(--lego-red);
 }
 body {
 	background-color: var(--lego-white);
@@ -32,12 +32,7 @@ body {
 	"footer footer footer footer";
 	height: 100vh;
 }
-.grid-main {
-  	grid-area: main;
-}
-.grid-item {
-  	grid-area: item;
-}
+
 
 
 /* ============ LOGO ============ */
@@ -108,33 +103,35 @@ body {
 
 
 /* ============ INDEX ============ */
-.index-input-area{
-	background-color: rgba(0, 128, 0, 0.288);
+.index-input-area {
+	margin-left: auto;
+	margin-right: auto;
 }
-
-#index-content-area{
-
-	background-color: rgba(255, 0, 0, 0.116);
+.index-input-area > h1 {
+	display: flex;
 }
-
-.index-sets{
-	background-color: rgba(32, 16, 248, 0.178);
+#index-content-area {
+	background-color: red;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
 }
-
+.index-sets {
+	background-color: blue;
+}
 .index-lego {
 	grid-area: main;
 	text-align: center;
 	margin: 80px;
 }
 .index-minifig {
-	border: solid var(--lego-black) 5px;
-	width: 300px;
+	border: solid var(--lego-black) 3px;
+	height: 200px;
 }
 .index-sets > img {
-	border: solid var(--lego-black) 5px;
-	height: 200px;
+	border: solid var(--lego-black) 3px;
+	height: 75px;
 	margin: 1%;
-
 }
 .index-lego .index-popup-container .index-popup-content {
 	position: fixed;
@@ -181,61 +178,45 @@ body {
 	margin-top: 30px;
 }
 .blacklist-container {
-  	grid-area: blacklist-container;
+	grid-area: blacklist-container;
 }
 .blacklist-container > textarea {
-  	resize: none;
+	resize: none;
 }
 .blacklist-lego {
-  	display: flex;
-  	grid-area: bi3;
+	display: flex;
+	grid-area: bi3;
 }
 
 
 /* ============ LANDING ============ */
 .landing-grid {
-    display: grid;
-    grid-template-columns: auto auto auto ;
-    grid-template-rows: auto auto  ;
-    padding-top: 10%;
-    padding-left: 50px;
-    padding-right: 50px;
-}
-.landing-grid .landing-project-img{
-      text-align: center;
-}
-.landing-grid .landing-project-img > a > img {
-      margin: 30px;
-      height: 100px;
-}
-.landing-grid .landing-project-img > a > h2 {
-      margin: 5px;
-    color: var(--lego-black);
-    font-weight: lighter;
-    letter-spacing: 1px;
-    text-decoration: none;
-    text-transform: uppercase;
+	display: grid;
+	grid-template-columns: auto auto auto ;
+	grid-template-rows: auto auto;
+	justify-content: center;
+	margin-top: 100px;
 }
 .landing-grid .landing-popup-container .landing-popup-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(0);
-    background: #fff;
-    width: 450px;
-    height: 220px;
-    z-index: 2;
-    text-align: center;
-    padding: 20px;
-    box-sizing: border-box;
-    border: solid var(--lego-black) 3px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) scale(0);
+	background: #fff;
+	width: 450px;
+	height: 220px;
+	z-index: 2;
+	text-align: center;
+	padding: 20px;
+	box-sizing: border-box;
+	border: solid var(--lego-black) 3px;
 }
 .landing-grid .landing-popup-container .landing-popup-close {
     position: absolute;
     right: 20px;
     top: 20px;
-    width: 30px;
     height: 30px;
+	width: 30px;
     background: #222;
     color:#fff;
     font-size: 25px;
@@ -243,11 +224,28 @@ body {
     line-height: 30px;
     text-align: center;
     border-radius: 50%;
+	cursor: pointer;
+}
+.landing-project {
+	background-color: var(--lego-yellow);
+	height: 220px;
+	width: 200px;
+	margin: 75px;
+	border-radius: 10%;
+	transition: transform .2s;
+}
+.landing-project .landing-project-img {
+	max-width: 200px;
+	border-radius: 10%;
+}
+.landing-project:hover {
+	cursor: pointer;
+	transform: scale(1.2);
 }
 .landing-popup-container.active .landing-popup-content {
-      transition: all 300ms ease-in-out;
-      transform: translate(-50%, -50%) scale(1);
+    transition: all 300ms ease-in-out;
+    transform: translate(-50%, -50%) scale(1);
 }
 .landing-grid .landing-popup-container .landing-popup-content > h3 {
-      margin-top: 20%;
+    margin-top: 20%;
 }
