@@ -196,10 +196,9 @@ body {
 .landing-grid {
 	display: grid;
 	grid-template-columns: auto auto auto ;
-	grid-template-rows: auto auto  ;
-	padding-top: 10%;
-	padding-left: 50px;
-	padding-right: 50px;
+	grid-template-rows: auto auto;
+	justify-content: center;
+	margin-top: 100px;
 }
 .landing-grid .landing-popup-container .landing-popup-content {
 	position: absolute;
@@ -231,16 +230,16 @@ body {
 	cursor: pointer;
 }
 .landing-project {
-	background-color: var(--lego-red);
-	height: 200px;
+	background-color: var(--lego-yellow);
+	height: 220px;
 	width: 200px;
 	margin: 75px;
-	border-radius: 15%;
+	border-radius: 10%;
 	transition: transform .2s;
 }
 .landing-project .landing-project-img {
 	max-width: 200px;
-	border-radius: 15%;
+	border-radius: 10%;
 }
 .landing-project:hover {
 	cursor: pointer;
