@@ -1,17 +1,14 @@
-var express = require('express');
-var app = express();
 
-//set port
-var port = process.env.port || 8080
+var app = require('express')();
 
-app.use(express.static(__dirname));
+const PORT = process.env.PORT || 3000;
 
-// routes
 
-app.get("./", function(req, res){
+
+app.get("", (req, res)=>{
     res.render("index");
 });
 
-app.listen(port, function(){
-    console.log("")
+app.listen(PORT , ()=>{
+    console.log(`App up at port ${PORT}`);
 });
