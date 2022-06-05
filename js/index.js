@@ -4,13 +4,13 @@ var ordenencontainer;
 
 window.addEventListener("load", function () {
     // Get button object.
-    let userNumberBtn = document.querySelector('#input-button');
+    let userNumberBtn = document.querySelector('#index-input-button');
 
-    ordenencontainer = document.getElementById("content-area");
+    ordenencontainer = document.getElementById("index-content-area");
 
     // Listen for button click.
     userNumberBtn.addEventListener("click", function () {
-        userInputNumber = document.querySelector('#input-value').value;
+        userInputNumber = document.querySelector('#index-input-value').value;
 
         // Call to fetchDataIndex.
         kaders();
@@ -33,7 +33,7 @@ function blacklist(fig_num) {
     // Remove div from mini fig.
     document.getElementById(`index-lego-div${fig_num}`).remove();
     // Close popup not needed because div gets removed.
-    // togglePopup(fig_num);
+    // togglePopupIndex(fig_num);
 }
 
 function whitelist(fig_num,fig_set){
@@ -131,15 +131,14 @@ async function fetchDataIndex(fig_num) {
 
             let stukjeHTML = `
             <div class="index-lego" id="index-lego-div${fig_num}">
-            <div class="index-popup-container" id="popup-${fig_num}">
+            <div class="index-popup-container" id="index-popup-container-div${fig_num}">
                 <div class="index-popup-content">
-                    <div class="close-btn" onclick="togglePopup(${fig_num})">&times;
-                    </div>
+                    
                     <h3>Geef uw reden voor blacklisting.</h3>
                     <textarea rows="5" cols="50" name="comment" form="usrform" id="textarea-${fig_num}">
                     </textarea>
                     <button onclick="blacklist(${fig_num})">Submit</button>
-                    <button onclick="togglePopup(${fig_num})">Cancel</button>
+                    <button onclick="togglePopupIndex(${fig_num})">Cancel</button>
                 </div>
             </div>
             <img class="index-minifig" src="${data.set_img_url}">
@@ -151,7 +150,7 @@ async function fetchDataIndex(fig_num) {
             `
             </div>
             <br>
-            <button type="button" onclick="togglePopup(${fig_num})">Blacklist</button>
+            <button type="button" onclick="togglePopupIndex(${fig_num})">Blacklist</button>
             <button type="button" onclick="skipSet(${fig_num})">Skip</button>
             </div>
             ` // WATCH OUT FOR ACCIDENTAL DELETION.

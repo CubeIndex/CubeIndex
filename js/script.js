@@ -1,8 +1,8 @@
-function togglePopup(popup_id) {
-    document.getElementById(`popup-${popup_id}`).classList.toggle("active");
+function togglePopupIndex(popup_id) {
+    document.getElementById(`index-popup-container-div${popup_id}`).classList.toggle("active");
 }
-function togglePopup1() {
-    document.getElementById(`popup-1`).classList.toggle("active");
+function togglePopupLanding() {
+    document.getElementById(`landing-popup-container-div`).classList.toggle("active");
 }
 function padDigits(number, digits) {
     return Array(Math.max(digits - String(number).length + 1, 0)).join(0) + number;
@@ -50,7 +50,6 @@ function fetchParts() {
         })
         .then(data => {
             console.log(data.results);
-            //data = object with all data, results = name of the array, slice = to pick a specific amount of objects in the array, map = to convert to HTML 
             const html = data.results.map
                 (partuser => {
                     return `
@@ -81,7 +80,6 @@ function fetchData() {
         })
         .then(data => {
             console.log(data.results);
-            //data = object with all data, results = name of the array, slice = to pick a specific amount of objects in the array, map = to convert to HTML 
             const html = data.results.slice(0, 5).map
                 (user => {
                     return `
@@ -112,7 +110,6 @@ function fetchDataIndex1() {
     })
     .then(data => {
         console.log(data.results);
-        //data = object with all data, results = name of the array, slice = to pick a specific amount of objects in the array, map = to convert to HTML 
         const html = data.results.slice(0, 1).map
             (user => {
                 return `
@@ -147,5 +144,5 @@ function fetchDataIndex1() {
                 .join(" ");
             console.log(htmlindex);
             document.querySelector("#appindex").insertAdjacentHTML("afterbegin", htmlindex);
-        })
-    }
+        });
+}
