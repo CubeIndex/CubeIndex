@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" type="assets/favicon" href="assets/favicon.ico">
-    <script src="/js/script.js"></script>
-    <script src="/js/index.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/index.js"></script>
     <title>CubeIndex | Home</title>
 </head>
 
@@ -16,9 +16,9 @@
 
         <!-- LOGO -->
         <div class="logo">
-            <a href="/index.html"><img src="assets/logo-white-transparent.png" alt="CubeIndex Logo"
-                    title="CubeIndex Logo"></a>
+            <a href="/index.html"><img src="assets/logo-white-transparent.png" alt="CubeIndex Logo" title="CubeIndex Logo"></a>
         </div>
+
 
         <!-- NAVBAR -->
         <div class="navbar">
@@ -29,19 +29,14 @@
             </nav>
         </div>
 
+
         <!-- CONTENT -->
-        <div class="nummerbar">
+        <div class="input-area">
             <h1>Aantal minifigs</h1>
-            <input type="number" id="userNumberVal">
-            <button id="userNumberBtn" type="button">click</button>
+            <input type="number" id="input-value">
+            <button type="button" id="input-button">OK</button>
         </div>
-        
-
-        <div id="ordencont"></div>
-
-        <div id="app"></div>
-        <br>
-        <div id="appindex"></div>
+        <div id="content-area"></div>
 
 
         <!-- FOOTER -->
@@ -49,14 +44,4 @@
             <footer><a href="/landing.html">Landing Page</a></footer>
         </div>
     </main>
-
-    <!-- SCRIPT -->
-    <script>
-     //   let number = prompt("Voer in hoeveel u wilt ordenen.");
-     //   if (number == null || number == ""){
-     //       nbr = "No Number provided";5
-     //   } else {
-     //       nbr = "U moet " + number + " ordenen"
-     //   }
-    </script>
 </body>

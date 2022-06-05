@@ -109,45 +109,34 @@ body {
 
 /* ============ INDEX ============ */
 
-.nummerbar{
+.input-area{
 	background-color: rgba(0, 128, 0, 0.288);
 }
 
- #ordencont{
+#content-area{
 
-	 background-color: rgba(255, 0, 0, 0.116);
+	background-color: rgba(255, 0, 0, 0.116);
 }
 
- .indexSets{
+.index-sets{
 	background-color: rgba(32, 16, 248, 0.178);
 }
-
-.ordenen {
+.index-lego {
 	grid-area: main;
 	text-align: center;
 	margin: 80px;
 }
-.indexMinifig {
+.index-minifig {
 	border: solid var(--lego-black) 5px;
 	width: 300px;
 }
-.indexSets > img {
+.index-sets > img {
 	border: solid var(--lego-black) 5px;
 	height: 200px;
 	margin: 1%;
 
 }
-.ordenen .popup .overlay {
-	position: fixed;
-	top: 0px;
-	left: 0px;
-	width: 100vw;
-	height: 100vh;
-	background: rgba(0,0,0,0,.7);
-	z-index: 1;
-	display: none;
-}
-.ordenen .popup .content {
+.index-lego .index-popup-container .index-popup-content {
 	position: fixed;
 	top: 50%;
 	left: 50%;
@@ -161,7 +150,7 @@ body {
 	box-sizing: border-box;
 	border: solid var(--lego-black) 3px;
 }
-.ordenen .popup .close-btn {
+.index-lego .index-popup-container .close-btn {
 	position: absolute;
 	right: 20px;
 	top: 20px;
@@ -175,17 +164,14 @@ body {
 	text-align: center;
 	border-radius: 50%;
 }
-.popup.active .overlay {
-	display: block;
-}
-.popup.active .content {
+.index-popup-container.active .index-popup-content {
 	transition: all 300ms ease-in-out;
 	transform: translate(-50%, -50%) scale(1);
 }
-.ordenen .popup .content > h3{
+.index-lego .index-popup-container .index-popup-content > h3{
   	margin-top: 5%;
 }
-.ordenen .popup .content > textarea {
+.index-lego .index-popup-container .index-popup-content > textarea {
   	resize: none;
 }
 
@@ -296,17 +282,7 @@ body {
 	text-decoration: none;
 	text-transform: uppercase;
 }
-.landing .popup .overlay{
-	position: fixed;
-	top: 0px;
-	left: 0px;
-	width: 100vw;
-	height: 100vh;
-	background: rgba(0,0,0,0,.7);
-	z-index: 1;
-	display: none;
-}
-.landing .popup .content{
+.landing .index-popup-container .index-popup-content {
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -320,7 +296,7 @@ body {
 	box-sizing: border-box;
 	border: solid var(--lego-black) 3px;
 }
-.landing .popup .close-btn {
+.landing .index-popup-container .close-btn {
 	position: absolute;
 	right: 20px;
 	top: 20px;
@@ -334,13 +310,10 @@ body {
 	text-align: center;
 	border-radius: 50%;
 }
-.popup.active .overlay {
-	display: block;
-}
-.popup.active .content {
+.index-popup-container.active .index-popup-content {
   	transition: all 300ms ease-in-out;
   	transform: translate(-50%, -50%) scale(1);
 }
-.landing .popup .content > h3 {
+.landing .index-popup-container .index-popup-content > h3 {
   	margin-top: 20%;
 }
