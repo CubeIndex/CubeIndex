@@ -121,6 +121,7 @@ body {
 .index-sets{
 	background-color: rgba(32, 16, 248, 0.178);
 }
+
 .index-lego {
 	grid-area: main;
 	text-align: center;
@@ -135,6 +136,16 @@ body {
 	height: 200px;
 	margin: 1%;
 
+}
+.index-lego .index-popup-container .overlay {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100vw;
+	height: 100vh;
+	background: rgba(0,0,0,0,.7);
+	z-index: 1;
+	display: none;
 }
 .index-lego .index-popup-container .index-popup-content {
 	position: fixed;
@@ -163,6 +174,9 @@ body {
 	line-height: 30px;
 	text-align: center;
 	border-radius: 50%;
+}
+.index-popup-container.active .overlay {
+	display: block;
 }
 .index-popup-container.active .index-popup-content {
 	transition: all 300ms ease-in-out;
@@ -260,60 +274,73 @@ body {
 
 /* ============ LANDING ============ */
 .landing {
-	display: grid;
-	grid-template-columns: auto auto auto ;
-	grid-template-rows: auto auto  ;
-	padding-top: 10%;
-	padding-left: 50px;
-	padding-right: 50px;
+    display: grid;
+    grid-template-columns: auto auto auto ;
+    grid-template-rows: auto auto  ;
+    padding-top: 10%;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 .landing .project{
-  	text-align: center;
+      text-align: center;
 }
 .landing .project > a > img {
-  	margin: 30px;
-  	height: 100px;
+      margin: 30px;
+      height: 100px;
 }
 .landing .project > a > h2 {
-  	margin: 5px;
-	color: var(--lego-black);
-	font-weight: lighter;
-	letter-spacing: 1px;
-	text-decoration: none;
-	text-transform: uppercase;
+      margin: 5px;
+    color: var(--lego-black);
+    font-weight: lighter;
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-transform: uppercase;
 }
-.landing .index-popup-container .index-popup-content {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%) scale(0);
-	background: #fff;
-	width: 450px;
-	height: 220px;
-	z-index: 2;
-	text-align: center;
-	padding: 20px;
-	box-sizing: border-box;
-	border: solid var(--lego-black) 3px;
+.landing .popup .overlay{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0,.7);
+    z-index: 1;
+    display: none;
 }
-.landing .index-popup-container .close-btn {
-	position: absolute;
-	right: 20px;
-	top: 20px;
-	width: 30px;
-	height: 30px;
-	background: #222;
-	color:#fff;
-	font-size: 25px;
-	font-weight: 60;
-	line-height: 30px;
-	text-align: center;
-	border-radius: 50%;
+.landing .popup .content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    background: #fff;
+    width: 450px;
+    height: 220px;
+    z-index: 2;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    border: solid var(--lego-black) 3px;
 }
-.index-popup-container.active .index-popup-content {
-  	transition: all 300ms ease-in-out;
-  	transform: translate(-50%, -50%) scale(1);
+.landing .popup .close-btn {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 30px;
+    height: 30px;
+    background: #222;
+    color:#fff;
+    font-size: 25px;
+    font-weight: 60;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
 }
-.landing .index-popup-container .index-popup-content > h3 {
-  	margin-top: 20%;
+.popup.active .overlay {
+    display: block;
+}
+.popup.active .content {
+      transition: all 300ms ease-in-out;
+      transform: translate(-50%, -50%) scale(1);
+}
+.landing .popup .content > h3 {
+      margin-top: 20%;
 }
