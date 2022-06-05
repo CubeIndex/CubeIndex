@@ -68,7 +68,7 @@ async function kaders() {
 
     // pagina leegmaken
     ordenencontainer.innerHTML = "";
-    while (setCounter < 4) {
+    while (setCounter < userInputNumber) {
 
         // haal data op en controlleer voor set aantal
         let succes = await fetchDataIndex(setNumber);
