@@ -14,14 +14,12 @@ function fetchData() {
                     return `
             <div class="user" >
             <p><a href="minifigs.html?fig=${user.set_num}"><img src="${user.set_img_url}" alt="${user.name}" width = "150px"/></a> </p>
-            <p>Name: ${user.set_num}</p>
-            <p>Email: ${user.name}</p>
             </div>
             `;
                 })
                 .join(" ");
             console.log(html);
-            document.querySelector("#app").insertAdjacentHTML("afterbegin", html);
+            document.querySelector("#geordend-minifig").insertAdjacentHTML("afterbegin", html);
         })
         .catch(error => {
             console.log(error);
@@ -45,13 +43,12 @@ function fetchDataSet1() {
                 return `
         <div class="user" >
         <p><a href="sets.html?set=${index.set_num}"><img src="${index.set_img_url}" alt="${index.name}" width="150px" /> </a></p>
-        <p>Name: ${index.name}</p>
         </div>
         `;
             })
             .join(" ");
         console.log(htmlindex);
-        document.querySelector("#appindex1").insertAdjacentHTML("afterbegin", htmlindex);
+        document.querySelector("#geordend-set-1").insertAdjacentHTML("afterbegin", htmlindex);
     })
 }
 fetchDataSet1();
@@ -71,13 +68,12 @@ function fetchDataSet2() {
                 return `
         <div class="user" >
         <p><a href="sets.html?set=${index.set_num}"><img src="${index.set_img_url}" alt="${index.name}" width="150px" /> </a></p>
-        <p>Name: ${index.name}</p>
         </div>
         `;
             })
             .join(" ");
         console.log(htmlindex);
-        document.querySelector("#appindex2").insertAdjacentHTML("afterbegin", htmlindex);
+        document.querySelector("#geordend-set-2").insertAdjacentHTML("afterbegin", htmlindex);
     })
 }
 fetchDataSet2();
@@ -96,13 +92,12 @@ function fetchDataSet3() {
                 return `
         <div class="user" >
         <p><a href="sets.html?set=${index.set_num}"><img src="${index.set_img_url}" alt="${index.name}" width="150px" /> </a></p>
-        <p>Name: ${index.name}</p>
         </div>
         `;
             })
             .join(" ");
         console.log(htmlindex);
-        document.querySelector("#appindex3").insertAdjacentHTML("afterbegin", htmlindex);
+        document.querySelector("#geordend-set-3").insertAdjacentHTML("afterbegin", htmlindex);
     })
 }
 fetchDataSet3();
@@ -121,13 +116,12 @@ function fetchDataSet4() {
                 return `
         <div class="user" >
         <p><a href="sets.html?set=${index.set_num}"><img src="${index.set_img_url}" alt="${index.name}" width="150px" /> </a></p>
-        <p>Name: ${index.name}</p>
         </div>
         `;
             })
             .join(" ");
         console.log(htmlindex);
-        document.querySelector("#appindex4").insertAdjacentHTML("afterbegin", htmlindex);
+        document.querySelector("#geordend-set-4").insertAdjacentHTML("afterbegin", htmlindex);
     })
 }
 fetchDataSet4();
@@ -146,13 +140,12 @@ function fetchDataSet5() {
                 return `
         <div class="user" >
         <p><a href="sets.html?set=${index.set_num}"><img src="${index.set_img_url}" alt="${index.name}" width="150px" /> </a></p>
-        <p>Name: ${index.name}</p>
         </div>
         `;
             })
             .join(" ");
         console.log(htmlindex);
-        document.querySelector("#appindex5").insertAdjacentHTML("afterbegin", htmlindex);
+        document.querySelector("#geordend-set-5").insertAdjacentHTML("afterbegin", htmlindex);
     })
 }
 fetchDataSet5();

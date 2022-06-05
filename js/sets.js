@@ -20,7 +20,7 @@ function fetchDataSingleSet() {
             </div>
             `
             console.log(htmlcode);
-            document.querySelector("#appsingle").innerHTML = htmlcode;
+            document.querySelector("#sets-set-img").innerHTML = htmlcode;
 
         });
         
@@ -53,7 +53,7 @@ function fetchSetFig() {
                 })
                 .join(" ");
             console.log(html);
-            document.querySelector("#setfig").insertAdjacentHTML("afterbegin", html);
+            document.querySelector("#sets-set-figs").insertAdjacentHTML("afterbegin", html);
         })
         .catch(error => {
             console.log(error);
