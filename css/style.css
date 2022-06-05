@@ -32,12 +32,7 @@ body {
 	"footer footer footer footer";
 	height: 100vh;
 }
-.grid-main {
-  	grid-area: main;
-}
-.grid-item {
-  	grid-area: item;
-}
+
 
 
 /* ============ LOGO ============ */
@@ -108,33 +103,35 @@ body {
 
 
 /* ============ INDEX ============ */
-.index-input-area{
-	background-color: rgba(0, 128, 0, 0.288);
+.index-input-area {
+	margin-left: auto;
+	margin-right: auto;
 }
-
-#index-content-area{
-
-	background-color: rgba(255, 0, 0, 0.116);
+.index-input-area > h1 {
+	display: flex;
 }
-
-.index-sets{
-	background-color: rgba(32, 16, 248, 0.178);
+#index-content-area {
+	background-color: red;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
 }
-
+.index-sets {
+	background-color: blue;
+}
 .index-lego {
 	grid-area: main;
 	text-align: center;
 	margin: 80px;
 }
 .index-minifig {
-	border: solid var(--lego-black) 5px;
-	width: 300px;
+	border: solid var(--lego-black) 3px;
+	height: 200px;
 }
 .index-sets > img {
-	border: solid var(--lego-black) 5px;
-	height: 200px;
+	border: solid var(--lego-black) 3px;
+	height: 75px;
 	margin: 1%;
-
 }
 .index-lego .index-popup-container .index-popup-content {
 	position: fixed;
