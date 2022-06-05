@@ -237,16 +237,12 @@ body {
 }
 
 /* ============ BLACKLIST ============ */
-.blacklist {
+#blacklistHtml {
+	align-items: center;
 	margin-left: 35%;
 	margin-top: 30px;
-	grid-area: main;
-	display: grid;
-	grid-template-areas: 
-	"bi1"
-	"bi2"
-	"bi3";
 }
+
 .blackImg {
 	margin: 10px;
 	grid-area: blackImg;
@@ -268,6 +264,11 @@ body {
 .blacklistItem3 {
   	display: flex;
   	grid-area: bi3;
+}
+
+.blacklistUser{
+	display: flex;
+	background-color: #ca1a28;
 }
 
 

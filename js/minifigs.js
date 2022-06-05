@@ -1,1 +1,5 @@
 fetchDataSingle();
+
+
+
+fetchParts();

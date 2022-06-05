@@ -1,19 +1,23 @@
-const { MongoClient } = require('mongodb');
+var test = 'mongodb';
+// require([test], result => test = result);
 
-async function maindb() {
-    const uri = "mongodb+srv://CubeIndex-Admin:2zlSi245Z2bDDK86@cubeindex-cluster.rje0w.mongodb.net/?retryWrites=true&w=majority";
+const { MongoClient } = require("mongodb", result => test = result);
+console.log(MongoClient)
+// const { MongoClient } =  require("mongodb");
 
+const uri = "mongodb+srv://CubeIndex-Admin:2zlSi245Z2bDDK86@cubeindex-cluster.rje0w.mongodb.net/?retryWrites=true&w=majority";
+const client = new MongoClient(uri);
 
-    const client = new MongoClient(uri);
+async function maindb(setnum,fignum,figimg,setimg) {
 
+    
     try {
         await client.connect();
-
         //await listDatabases(client);
 
         await createListing(client, {
-            name: "NameTest",
-            summary: "summaryTest",
+            name: `fghfg`,
+            summary: "vincent",
             room: "1"
         })
     } catch (e) {

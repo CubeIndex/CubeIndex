@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" type="assets/favicon" href="assets/favicon.ico">
-    <script src="/js/script.js"></script>
+    <script src="/js/blacklist.js"></script>
+
     <title>CubeIndex | Blacklist</title>
 </head>
 <body>
@@ -26,56 +27,11 @@
         </div>
 
         <!-- CONTENT -->
-        <div class="blacklist">
-            <div class="blacklistItem1" >
-                <div class="blackImg">
-                    <img src="https://fakeimg.pl/250x150/?text=Minifig" alt="Minifig">
-                </div>
-                <div class="reason">
-                    <h2>
-                        Minifig Name
-                    </h2>
-                    <textarea id="reason1" rows="4" cols="50" name="comment" form="usrform" readonly>Sample Text</textarea>
-                    <br>
-                    <form>
-                      <input type="button" id="edit1" value="EDIT" onclick="Buttontoggle1();">
-                      <input type="button" value="DELETE">
-                    </form>
-                </div>
-            </div>
-            <div class="blacklistItem2">
-                <div class="blackImg">
-                    <img src="https://fakeimg.pl/250x150/?text=Minifig" alt="Minifig">
-                </div>
-                <div class="reason">
-                    <h2>
-                        Minifig Name
-                    </h2>
-                    <textarea id="reason2" rows="4" cols="50" name="comment" form="usrform" readonly>Sample Text</textarea>
-                    <br>
-                    <form>
-                      <input type="button" id="edit2" value="EDIT" onclick="Buttontoggle2();">
-                      <input type="button" value="DELETE">
-                    </form>
-                </div>
-            </div>
-            <div class="blacklistItem3" >
-                <div class="blackImg">
-                    <img src="https://fakeimg.pl/250x150/?text=Minifig" alt="Minifig">
-                </div>
-                <div class="reason">
-                    <h2>
-                        Minifig Name
-                    </h2>
-                    <textarea id="reason3" rows="4" cols="50" name="comment" form="usrform" readonly>Sample Text</textarea>
-                    <br>
-                    <form>
-                      <input type="button" id="edit3" value="EDIT" onclick="Buttontoggle3();">
-                      <input type="button" value="DELETE">
-                    </form>
-                </div>
-            </div>
-        </div>
+       
+
+        
+        <div id="blacklistHtml"></div>
+
 
         <!-- FOOTER -->
         <div class="footer">
@@ -83,42 +39,5 @@
         </div>
     </main>
     
-    <!-- SCRIPT -->
-    <script>
-    function Buttontoggle1()
-        {
-        var r1 = document.getElementById("reason1")
-        var t1 = document.getElementById("edit1");
-        if(t1.value=="SAVE"){
-            r1.readOnly = true, 
-            t1.value="EDIT";}
-        else if(t1.value=="EDIT"){
-            r1.readOnly = false, 
-            t1.value="SAVE";}
-        }
 
-            function Buttontoggle2()
-        {
-            var r2 = document.getElementById("reason2")
-        var t2 = document.getElementById("edit2");
-        if(t2.value=="SAVE"){
-            r2.readOnly = true, 
-            t2.value="EDIT";}
-        else if(t2.value=="EDIT"){
-            r2.readOnly = false, 
-            t2.value="SAVE";}
-            }
-
-            function Buttontoggle3()
-        {
-            var r3 = document.getElementById("reason3")
-        var t3 = document.getElementById("edit3");
-        if(t3.value=="SAVE"){
-            r3.readOnly = true, 
-            t3.value="EDIT";}
-        else if(t3.value=="EDIT"){
-            r3.readOnly = false, 
-            t3.value="SAVE";}
-            }
-    </script>
 </body>
