@@ -30,7 +30,7 @@ function fetchDataSingle() {
             </div>
             `
             console.log(htmlcode);
-            document.querySelector("#sets-set-img").innerHTML = htmlcode;
+            document.querySelector("#minifigs-minifig-img").innerHTML = htmlcode;
 
         });
         
@@ -60,7 +60,7 @@ function fetchParts() {
                 })
                 .join(" ");
             console.log(html);
-            document.querySelector("#minifigParts").insertAdjacentHTML("afterbegin", html);
+            document.querySelector("#minifigs-minifig-parts").insertAdjacentHTML("afterbegin", html);
             console.log(partuser.part.name);
 
         })

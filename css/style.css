@@ -108,7 +108,6 @@ body {
 
 
 /* ============ INDEX ============ */
-
 .index-input-area{
 	background-color: rgba(0, 128, 0, 0.288);
 }
@@ -164,84 +163,32 @@ body {
 
 
 /* ============ GEORDEND ============ */
-.geordend {
-  	grid-area: main;
-  	text-align: center;
-}
-.geoSet {
-  	margin-top: 30px;
-}
-.geoSet > a > img{
-  	margin: 10px;
-}
-.geoSet > button {
-	background-color: var(--lego-white);
-	color: var(--lego-red);
-	border: solid var(--lego-red);
-	cursor: pointer;
-	text-align: right;
-	margin: 10px;
-	margin-left: 440px;
-	font-size: 20px;
-}
+
 
 
 /* ============ MINIFIGS ============ */
-.minifig {
-	margin-top: 30px;
-	grid-area: main;
-	text-align: center;
-}
-#Part {
-	display: grid;
-	grid-template-columns: auto;
-}
+
 
 
 /* ============ SETS ============ */
-.set {
-	margin-top: 30px;
-	grid-area: main;
-	text-align: center;
-}
-#Mini {
-	display: grid;
-	grid-template-columns: auto;
-}
+
+
 
 /* ============ BLACKLIST ============ */
-#blacklistHtml {
+#blacklist-input-area {
 	align-items: center;
 	margin-left: 35%;
 	margin-top: 30px;
 }
-
-.blackImg {
-	margin: 10px;
-	grid-area: blackImg;
+.blacklist-container {
+  	grid-area: blacklist-container;
 }
-.reason {
-  	grid-area: reason;
-}
-.reason > textarea {
+.blacklist-container > textarea {
   	resize: none;
 }
-.blacklistItem1 {
-  	display: flex;
-  	grid-area: bi1;
-}
-.blacklistItem2 {
-  	display: flex;
-  	grid-area: bi2;
-}
-.blacklistItem3 {
+.blacklist-lego {
   	display: flex;
   	grid-area: bi3;
-}
-
-.blacklistUser{
-	display: flex;
-	background-color: #ca1a28;
 }
 
 
